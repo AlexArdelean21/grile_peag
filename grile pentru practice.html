@@ -166,6 +166,83 @@
 					correct: ['7'],
 				},
 				{
+					text: 'Tournament selection with 3 participants has the following consequences: a. selects one parent / member of next generation; b. randomly selects 3 individuals from the set it is applied on; c. selects the best individual from the 3 individuals randomly considered from the multiset it is applied on; d. randomly selects an individual; e. creates a selection pressure proportional to 3.',
+					answers: [
+						'a. c, e',
+						'b. d, e',
+						'c. a, c, e',
+						'd. b, c',
+						'e. none of the other answers'
+					],
+					correct: ['d. b, c']
+				},
+				{
+					text: 'Let x be a binary vector of size 10 satisfying an admissibility criterion A. A neighbor of x is a feasible binary vector y such that the Hamming distance between x and y is 1. The set of neighbors of x:',
+					answers: [
+						'A. a and d',
+						'B. c and e',
+						'C. d and e',
+						'D. b and e',
+						'E. a and e'
+					],
+					correct: ['D. b and e']
+				},
+				{
+					text: 'In EAs, the role of the fitness function is:',
+					answers: [
+						'A. to end the search process',
+						'B. to select a pair of individuals for crossover',
+						'C. to represent the environment requirements to adapt to',
+						'D. none of the other answers',
+						'E. to select an individual for mutation'
+					],
+					correct: ['C. to represent the environment requirements to adapt to']
+				},
+				{
+					text: 'The integer representation in GAs:',
+					answers: [
+						'A. Is preferably for the optimization problems',
+						'B. Is just an implementation training and it is not used by GAs to solve real-world problems',
+						'C. Is recommended when at least a gene has more than two values',
+						'D. Cannot be used in case of ordinal attributes',
+						'E. Is not allowed'
+					],
+					correct: ['C. Is recommended when at least a gene has more than two values']
+				},
+				{
+					text: 'Consider f:D→[0,1], where D is a set with 10 elements, as the objective function in a maximization problem. The simplest way to compute the global maximum of f is:',
+					answers: [
+						'a. use divide et impera method',
+						'b. use a genetic algorithm',
+						'c. use hill climbing method',
+						'd. compute the value of f for each element in D and select the highest one',
+						'e. there is no way to know the simplest method'
+					],
+					correct: ['d. compute the value of f for each element in D and select the highest one']
+				},
+				{
+					text: 'Let f:[0,1]-> R, f(x)=(1.000.000 + x). A method that can compute the global maximum of f: a. involves evaluation of all elements in a population; b. must use an algorithm from the class of evolutionary strategies; c. generally uses hill climbing method; d. may use a classical evolutionary algorithm, based on populations, with real number representation; e. any of mentioned methods is suitable.',
+					answers: [
+						'a. d',
+						'b. a, b, e',
+						'c. a, d',
+						'd. d, e',
+						'e. e'
+					],
+					correct: ['a. d']
+				},
+				{
+					text: 'Consider S the space of binary vectors with k elements, and f:S->N the objective function in a maximization problem (N is the set of natural numbers). The global maximum of f could be computed by: a. computing the fitness of every element in S and selecting the best one, for low values of k; b. using an ES (evolutionary strategy) algorithm, for high values of k; c. applying an ES algorithm, for low values of k; d. applying hill climbing method, for low values of k; e. applying hill climbing method, for high values of k; f. using a classical genetic algorithm, based on populations, for high values of k; g. using a classical genetic algorithm, based on populations, for low values of k.',
+					answers: [
+						'a. b, f',
+						'b. c, d',
+						'c. a, f',
+						'd. b, e',
+						'e. b, g'
+					],
+					correct: ['a. b, f']
+				},
+				{
 					text: 'In GAs, the termination condition\n1. Could miss\n2. Includes the control of the number of simulated generations\n3. Always uses random factors\n4. May include the population variability control\n5. Improves the average quality of the current population\n6. Guarantees a better population in case it uses age factor\n7. Does not depend on the chromosome encoding\n8. Depends on the chromosome representation',
 					answers: ['3, 5, 6', '1, 5, 8', '1, 4, 7, 8', '2, 4, 7', '2, 3, 4, 5'],
 					correct: ['2, 4, 7'],
